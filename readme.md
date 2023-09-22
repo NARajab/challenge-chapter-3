@@ -10,7 +10,7 @@
 ###
 
 2. Get List Cars
-   ![Screenshot](images/GetListCars.png)
+   ![Screenshot](images/getListCars.png)
 
 ###
 
