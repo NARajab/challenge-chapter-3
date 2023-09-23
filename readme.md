@@ -1,33 +1,13 @@
-# Daily Task Chapter 3
+# Challenge Chapter 3
 
-- Create REST API CRUD Users, menggunakan data users.json lalu refactor routing di 2 resource
-
-##### Hasil Dari Postman
-
-1. Ping Successfully
-   ![Screenshot](images/pingSuccessfully.png)
-
-###
-
-2. Get List Cars
-   ![Screenshot](images/getListCars.png)
-
-###
-
-3. Get Car By Id
-   ![Screenshot](images/getCarById.png)
-
-###
-
-4. Insert Car
-   ![Screenshot](images/insertCar.png)
-
-###
-
-5. Edit Car
-   ![Screenshot](images/editCar.png)
-
-###
-
-6. Delete Car
-   ![Screenshot](images/deleteCar.png)
+- Buat RESTful API untuk manajemen data mobil tanpa database (bisa menggunakan
+  data array saja) :
+  a. GET / akan membuka root endpoint dengan response {message: “ping
+  successfully”}
+  b. GET /cars akan membuka list cars
+  c. GET /cars/:id akan membuka satu data cars.
+  d. POST /cars akan mengembalikan response data cars yang sudah terbuat.
+  e. PUT /cars/:id akan mengembalikan response data cars yang sudah
+  terupdate.
+  f. DELETE /cars/:id akan mengembalikan response data cars yang sudah
+  terhapus.
