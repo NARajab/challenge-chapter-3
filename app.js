@@ -6,17 +6,16 @@ const app = express()
 const carPingRouter = require("./routes/pingSuccessfullyRoutes")
 const carRouter = require("./routes/carRoutes")
 
-app.use(morgan("dev"))
 app.use(express.json())
+app.use(morgan("dev"))
 
-// Port
-const PORT = process.env.PORT || 8000
+app.use((req, res, next) => {
+  req.requestTime = new Date().toISOString()
+  console.log(req.requestTime)
+  next()
+})
 
 app.use("/", carPingRouter)
 app.use("/api/v1/cars", carRouter)
 
-app.listen(PORT, () => {
-  console.log(
-    `App running into http://localhost:${PORT}...`
-  )
-})
+module.exports = app
